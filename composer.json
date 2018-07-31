@@ -1,0 +1,17 @@
+{
+    "name": "yljphp/dd",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "杨立景",
+            "email": "yanglijing@mafengwo.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/var-dumper": "3.4.13"
+    },
+    "autoload": {
+        "files": [ "helper.php" ]
+    }
+}
