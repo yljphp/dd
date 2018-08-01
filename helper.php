@@ -3,11 +3,11 @@
 
 use Symfony\Component\VarDumper\VarDumper;
 
-if (!function_exists('dump')) {
+if (!function_exists('myDump')) {
     /**
      * @author Nicolas Grekas <p@tchwork.com>
      */
-    function dump($var)
+    function myDump($var)
     {
         foreach (func_get_args() as $var) {
             VarDumper::dump($var);
@@ -31,7 +31,7 @@ if (! function_exists('dd')) {
     function dd(...$args)
     {
         foreach ($args as $x) {
-            dump($x);
+            myDump($x);
         }
         die(1);
     }
